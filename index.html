@@ -23,12 +23,12 @@
 <body>
     <div id="root">
         <header>
-            <h1>TODOLIST</h1>
+            <h1 class="title">TODOLIST</h1>
         </header>
 
         <main>
             <div class="container wrapper_datainput">
-                <input type="text">
+                <input class="box_input" type="text" placeholder="Scrivi le cose da fare.........">
                 <button type="submit">Aggiungi</button>
             </div>
 
@@ -37,6 +37,7 @@
                     <li v-for="(todo,index) in todos"
                     :class="[classDefaultTodo, todo.done ? 'text_cut' : '']">
                     {{ todo.text }}
+                    <i @click="toggleIsDone(todo)" class="fa-solid fa-xmark"></i>
                     </li>
                 </ul>
             </div>

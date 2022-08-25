@@ -20,7 +20,11 @@ const app = new Vue({
         todos: todos,
         classDefaultTodo: 'todo',
     },
-
+    methods: {
+        toggleIsDone(todo) {
+            todo.done = !todo.done
+        }
+    },
 
 
 })

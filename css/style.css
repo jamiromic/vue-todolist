@@ -20,7 +20,45 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.title {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 1920px;
+   
+}
+
+.box_input {
+    margin-right: 0.50rem;
+    border-radius: 3px;
+}
+
+button{
+    padding: 3px 2px;
+    border-radius: 3px;
+}
+
+.list_todo {
+    width: 100%;
+}
+
+.todo {
+    background-color: lightblue;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+    border-radius: 3px;
+    
+}
+
 
 .text_cut {
     text-decoration: line-through;
 }
+
