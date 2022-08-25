@@ -19,10 +19,23 @@ const app = new Vue({
     data: {
         todos: todos,
         classDefaultTodo: 'todo',
+        newToDo: '',
     },
     methods: {
         toggleIsDone(todo) {
             todo.done = !todo.done
+        },
+        addToDo(){
+            this.newToDo = this.newToDo.trim()
+
+            if (!this.newToDo) return
+
+            this.todos.push({
+                text: this.newToDo,
+                done: false,
+            })
+
+            this.newToDo = ''
         }
     },
 
