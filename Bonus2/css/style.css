@@ -1,0 +1,66 @@
+/*Regole di Reset*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul,
+ol,
+menu {
+
+    list-style: none;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+   
+}
+
+.box_input {
+    margin-right: 0.50rem;
+    border-radius: 3px;
+}
+
+button{
+    padding: 3px 2px;
+    border-radius: 3px;
+}
+
+.list_todo {
+    width: 100%;
+}
+
+.todo {
+    background-color: lightblue;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+    border-radius: 3px;
+    
+}
+
+
+.text_cut {
+    text-decoration: line-through;
+    color: whitesmoke;
+}
+
