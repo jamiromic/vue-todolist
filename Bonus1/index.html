@@ -28,7 +28,7 @@
 
         <main>
             <div class="container wrapper_datainput">
-                <input v-model="newToDo" class="box_input" type="text" placeholder="Scrivi le cose da fare.........">
+                <input @keyup.enter="addToDo" v-model="newToDo" class="box_input" type="text" placeholder="Scrivi le cose da fare.........">
                 <button type="submit" @click="addToDo">Aggiungi</button>
             </div>
 
